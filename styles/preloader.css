@@ -1,0 +1,52 @@
+#preloader{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: black;
+    overflow: hidden;
+}
+.hidden{
+    display: none;
+}
+.preloader-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#foot_note{
+    animation: animationTwo 3.5s linear 1s infinite alternate;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+#wifi{
+    /* animation: animationOne 1.5s linear 0.5s infinite alternate; */
+    animation: animationTwo 2s linear 1s infinite alternate;
+}
+#globe_mesh{
+    animation: animationOne 2s linear 0.5s infinite alternate;
+}
+#akc_ms_c{
+    animation: animationTwo 2s linear 1s infinite alternate;
+}
+@keyframes animationOne {
+    0%{
+        opacity: 0;
+        fill: #fff;
+    }
+    100%{
+        opacity: 1;
+        fill: #F0920D;
+    }
+}
+@keyframes animationTwo {
+    0%{
+        opacity: 0;
+        fill: #fff;
+    }
+    100%{
+        opacity: 1;
+        fill: #ffffff;
+    }
+}
