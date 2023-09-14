@@ -16,37 +16,62 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#foot_note{
-    animation: animationTwo 3.5s linear 1s infinite alternate;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+#circle{
+    animation: animationOne 2s linear infinite alternate;
 }
-#wifi{
-    /* animation: animationOne 1.5s linear 0.5s infinite alternate; */
-    animation: animationTwo 2s linear 1s infinite alternate;
+#r1{
+    animation: animationTwo 2s linear infinite alternate;
 }
-#globe_mesh{
-    animation: animationOne 2s linear 0.5s infinite alternate;
-}
-#akc_ms_c{
-    animation: animationTwo 2s linear 1s infinite alternate;
+#r2{
+    animation: animationThree 2s linear infinite alternate;
 }
 @keyframes animationOne {
-    0%{
+    0% {
         opacity: 0;
-        fill: #fff;
+        color: #F0920D;
+    }
+    33% {
+      opacity: 1;
+      color: #F0920D;
     }
     100%{
         opacity: 1;
-        fill: #F0920D;
+      color: #F0920D;
     }
-}
-@keyframes animationTwo {
-    0%{
+  }
+
+  @keyframes animationTwo {
+    0% {
         opacity: 0;
-        fill: #fff;
+        color: #F0920D;
+    }
+    33% {
+        opacity: 0;
+        color: #F0920D;
+    }
+    66% {
+      opacity: 1;
+      color: #F0920D;
     }
     100%{
         opacity: 1;
-        fill: #ffffff;
+      color: #F0920D;
     }
-}
+  }
+
+  @keyframes animationThree {
+    0% {
+        opacity: 0;
+        color: #F0920D;
+    }
+    66% {
+      opacity: 0;
+      color: #F0920D;
+    }
+    100%{
+        opacity: 1;
+      color: #F0920D;
+    }
+  }
