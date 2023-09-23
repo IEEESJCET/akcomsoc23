@@ -12,9 +12,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <title>AKCOMSOC '23</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <link rel="stylesheet" href="./styles/preloader.css">
   <script src="./js/preloader.js"></script>
   <script src="./js/faq.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
 </head>
 
@@ -38,16 +41,81 @@
       </div>
       <div class="rectangle-3"></div>
       <div class="rectangle-4"></div>
-      <div class="text-wrapper-2">EVENTS</div>
+      
+      <div class="text-wrapper-2">
+
+        <div class="container my-special-section">
+          <div class="row">
+              <!-- Large devices (desktops) -->
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card mb-3 tilt-card">
+                      <img src="images/empower.jpeg" alt="Mountain" class="card-img-top">
+                      <div class="card-body">
+                          <h2ss="card-title">Mountain</h2>
+                          <p class="card-text">Lorem Ipsum is simply dummy text from the printing and typesetting industry</p>
+                          <a href="#" class="btn btn-primary custom-btn">Read More</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Medium devices (tablets) -->
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card mb-3 tilt-card">
+                      <img src="images/empower.jpeg" alt="Mountain" class="card-img-top">
+                      <div class="card-body">
+                          <h2 class="card-title">Mountain</h2>
+                          <p class="card-text">Lorem Ipsum is simply dummy text from the printing and typesetting industry</p>
+                          <a href="#" class="btn btn-primary custom-btn">Read More</a>
+                      </div>
+                  </div>
+              </div>
+              <!-- Small devices (phones) -->
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card mb-3 tilt-card">
+                      <img src="images/empower.jpeg" alt="Mountain" class="card-img-top">
+                      <div class="card-body">
+                          <h2 class="card-title">Mountain</h2>
+                          <p class="card-text">Lorem Ipsum is simply dummy text from the printing and typesetting industry</p>
+                          <a href="#" class="btn btn-primary custom-btn">Read More</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      </div>
+
       <img class="line-2" src="img/line-24.svg" />
       <img class="line-3" src="img/line-25.svg" />
-      <div class="rectangle-5"></div>
-      <div class="rectangle-6"></div>
-      <div class="text-wrapper-3">ABOUT</div>
+
+
+
+
+      <div class="text-wrapper-3">
+        <section class="about custom-section">
+          <div class="main">         
+              <img src="images/about-image.png" alt="">
+              <div class="all-text">
+                  <h4>About <span>AKComSOcSC</span></h4>
+                  <h1>Welcome to
+                      AKComSoc SC '23</h1>
+                  <p>
+                      All Kerala Communications Society Students Conclave 2022(AKComSoc '22) is a two-day event organized on the 4th and 5th of November 2023. The event is conducted by IEEE ComSoc Kerala Chapter and is hosted by IEEE SJCET SB. Here we are with 2 days of fun, tech, friendship, networking, and much more. Let’s come together and celebrate technology. Come over and discuss the trending changes happening in the world of technology and overnight discussions on different technical domains.
+                  </p>
+                  <div class="btn">
+                      <button type="button">REGISTER</button>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+
+      </div>
       <div class="text-wrapper-4">AKCOMSOC</div>
     </div>
   </div>
   <br>
+  
+  
   <!------------------FAQ Starts----------------------->
   <div class="wrapper">
     <p>Frequently Asked Questions:</p>
@@ -196,6 +264,18 @@
 
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+  <script>
+    // Initialize VanillaTilt on the card elements with the "tilt-card" class
+    VanillaTilt.init(document.querySelectorAll(".tilt-card"), {
+        max: 25,
+        speed: 400,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        perspective: 500,
+        transition: true
+    });
+</script>
 </body>
 <script>
   var acc = document.getElementsByClassName
