@@ -5,12 +5,16 @@
 <head>
   <link rel="stylesheet" href="globals.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
   <title>AKCOMSOC '23</title>
   <link rel="stylesheet" href="./styles/preloader.css">
   <script src="./js/preloader.js"></script>
+  <script src="./js/faq.js"></script>
 
 </head>
 
@@ -43,6 +47,73 @@
       <div class="text-wrapper-4">AKCOMSOC</div>
     </div>
   </div>
+  <br>
+  <!------------------FAQ Starts----------------------->
+  <div class="wrapper">
+    <p>Frequently Asked Questions:</p>
+    <div class="faq">
+      <button class="accordion">
+          What is ComSoc?
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 30 20">
+            <path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path>
+            </svg>
+      </button>
+    
+            <div class="answer"> 
+              <p class="fade">
+                The IEEE Communications Society promotes technological innovation and fosters creation and sharing of information among  the global technical community. The Society provides services to members for their technical and professional advancement and forums for technical exchanges among professionals in academia, industry, and public institutions.
+
+              </p>
+            </div>
+    </div>
+  
+
+    <div class="faq">
+      <button class="accordion">
+          What is AKComSocSC?
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 30 20">
+            <path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path>
+            </svg>
+          
+      </button>
+            <div class="answer"> 
+              <p>
+                To bring the world together in harmony through communications and networking technology research, application, education, and incubation of new ideas.
+              </p>
+            </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+          Is accommodation provided?
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 30 20">
+            <path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path>
+            </svg>
+          
+      </button>
+            <div class="answer"> 
+              <p>
+                Yes. Accommodation will be provided for all participants in nearby hostels. Ladies will have accommodation in the college while the gentlemen will be provided accommodation outside the college. Transportation to and from the venue will be provided. Please indicate your request for accommodation in the registration form to avail the facility.
+              </p>
+            </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+          Where can I purchase the tickets?
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 30 20">
+            <path fill-rule="evenodd" d="M 11 2 L 11 11 L 2 11 L 2 13 L 11 13 L 11 22 L 13 22 L 13 13 L 22 13 L 22 11 L 13 11 L 13 2 Z"></path>
+            </svg>
+          
+      </button>
+            <div class="answer"> 
+              <p>
+                You can purchase the tickets from this website once registration opens. 
+              </p>
+            </div>
+    </div>
+  </div>
+  <!------------------FAQ Ends------------------------->
   <div id="preloader">
     <div class="preloader-logo">
       <svg width="90%" height="576" viewBox="0 0 2558 576" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -126,5 +197,29 @@
     </div>
   </div>
 </body>
+<script>
+  var acc = document.getElementsByClassName
+  ("accordion")
+  var i;
 
+  for(i = 0; i < acc.length; i++)
+  {
+      acc[i].addEventListener("click",function(){
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+      var answer = this.nextElementSibling;
+
+      if(answer.style.display === "block")
+      {
+        answer.style.display = "none";
+      }
+      else
+      {
+        answer.style.display = "block";
+      }
+    });
+
+  }
+</script>
 </html>
