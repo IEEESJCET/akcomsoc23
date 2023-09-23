@@ -17,10 +17,6 @@
     transform: translate(-50%, -50%);
 }
 
-
-#circle{
-    animation: animationOne 2s linear infinite alternate;
-}
 #r1{
     animation: animationTwo 2s linear infinite alternate;
 }
