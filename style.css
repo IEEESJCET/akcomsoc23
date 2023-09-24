@@ -193,16 +193,16 @@
 }
 
 /* ..............FAQ Starts...........*/
-.wrapper{
+.faq-wrapper{
   margin: auto;
   padding: 25px;
-  max-width: 75%;
-  border: 1px solid grey;
-  border-radius: 50px;
-  background-color: black;
+  width: 75%;
+  /* border: 1px solid grey; */
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.673);
 }
 
-.wrapper > p{
+.faq-wrapper > p{
   margin: 0.7em;
   letter-spacing: 3px;
   font-size: 2em;
@@ -226,7 +226,7 @@
   padding: 10px;
   font-family: 'Roboto', sans-serif;
   align-items: center;
- 
+ border-radius: 20px;
 
 
 }
@@ -242,7 +242,8 @@
   overflow: hidden;
   background-color: orange;
   background-color: rgb(0, 0, 0);
-  
+  border-radius: 20px;
+  transition: 0.4S;
   display: none;
 }
 
@@ -258,6 +259,7 @@
 .faq{
   margin: 10px 0px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 
 }
 
@@ -435,4 +437,12 @@
 
 .my-special-section .card-body p {
   color: #777777;
+}
+
+.faq-div{
+  background-color: #171717;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
