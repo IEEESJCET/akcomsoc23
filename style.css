@@ -379,60 +379,43 @@
 
 /* Event Section */
 
-.my-special-section .card {
-  position: relative;
-  overflow: hidden;
+
+.transparent-button {
+  background: transparent;
+  border: 2px solid #c6c1c1; /* Solid border with a dark color */
+  color: #cdc3c3; /* Text color */
+  position: absolute;
+  width: 30%;
+  height: 7%;
+  bottom: 15px; /* Adjust the bottom spacing as needed */
+  left: 10px; /* Adjust the left spacing as needed */
+
+  transition: background-color 2s, color 2s; 
 }
 
-.my-special-section .card-body {
+.card:hover .transparent-button {
+  background: linear-gradient(90deg, #d18823, #222);
+  
+  color: white;
+  border: 2px solid #1b1a1a; /* Solid border with a dark color */
+
+}
+
+.card-body {
+  background-color: transparent;
+}
+
+.card-img-overlay-custom {
   position: absolute;
-  bottom: -100%;
+  top: 0;
   left: 0;
   right: 0;
-  padding: 15px;
-  transition: 0.3s ease-in-out;
-  background-image: url(''); /* Add the URL of your background image here */
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #d18823;
-}
-
-.my-special-section .card:hover .card-body {
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.my-special-section .card-img-top {
-  transition: 0.3s ease-in-out;
-}
-
-.my-special-section .card:hover .card-img-top {
-  filter: blur(5px);
-}
-
-.my-special-section .custom-btn {
-  background: linear-gradient(90deg, #222, #d18823);
-  border: none;
-  color: white;
-  padding: 0.6rem 1rem;
-  outline: none;
-  border-radius: 3px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.4s ease;
-  text-decoration: none; /* Remove underlines from the anchor tag */
-}
-
-.my-special-section .custom-btn:hover {
-  background: linear-gradient(90deg, #d18823, #222);
-  color: white;
-}
-
-.my-special-section .card-body h2 {
-  background: linear-gradient(90deg, #454343, #ff9500);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.my-special-section .card-body p {
-  color: #777777;
+.card-img-overlay-custom:hover {
+  background-color: rgba(255, 255, 255, 0.252); /* Semi-transparent white background */
 }
