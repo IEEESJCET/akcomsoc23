@@ -477,7 +477,8 @@ strong {
   position: relative;
   overflow: hidden;
   padding-top: 100px;
-  height: calc(100vh - 51px);
+  /* height: calc(100vh - 51px); */
+  height: 100dvh;
 }
 
 .hero-section small {
