@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+
+@font-face {
+    font-family: 'array';
+    src: url('/fonts/Array-Regular.otf') format('otf'),
+        url('/fonts/Array-Bold.otf') format('otf'),
+        url('/fonts/Array-Semibold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-bottom-sec {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.countdown-container {
+    text-align: center;
+    font-family: array;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.countdown-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.countdown-time {
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.countdown-text {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 500px) {
+    .countdown {
+        margin: 10px 0px;
+    }
+
+    .countdown-time {
+        font-size: 26px;
+    }
+
+    .countdown-text {
+        font-size: 16px;
+    }
+}

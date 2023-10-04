@@ -363,11 +363,12 @@ strong {
   top: 0;
   right: 0;
   left: 0;
-  margin-top: 51px;
+  /* margin-top: 51px; */
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: var(--dark-color);
+  background-color: #000000bd;
+  backdrop-filter: blur(15px);
 }
 
 .navbar {
@@ -400,7 +401,8 @@ strong {
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color: #000000;
+  font-weight: 600;
 }
 
 .navbar-toggler {
@@ -970,7 +972,7 @@ strong {
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0;
+    padding: 2px 15px;
   }
 
   .hero-section {
