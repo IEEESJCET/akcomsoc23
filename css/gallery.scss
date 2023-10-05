@@ -331,17 +331,17 @@ body{
                     &.full{
                          .swiper-container{
                               .swiper-wrapper{
-                                   height: 70vh;
+                                   height: 70%;
                                    
                                    .swiper-slide{
-                                        height: 50vh;
+                                        height: 50%;
 
                                         &.swiper-slide-prev,
-                                        &.swiper-slide-next{width: 10%!important}
+                                        &.swiper-slide-next{width: 5%!important}
 
                                         &.swiper-slide-active{
-                                             height: 70vh;
-                                             width: 80%!important
+                                             height: 50%;
+                                             width: 90%!important
                                         }
 
                                         .overlay{
