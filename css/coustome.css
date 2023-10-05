@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: 'array';
-    src: url('/fonts/Array-Regular.otf') format('otf'),
-        url('/fonts/Array-Bold.otf') format('otf'),
-        url('/fonts/Array-Semibold.otf') format('otf');
+    src: url(./fonts/Array-Regular.otf) format('otf'),
+        url(./fonts/Array-Bold.otf) format('otf'),
+        url(./fonts/Array-Semibold.otf) format('otf');
     font-weight: normal;
     font-style: normal;
 }
