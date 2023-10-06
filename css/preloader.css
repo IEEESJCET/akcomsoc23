@@ -234,7 +234,15 @@
   height: 100%;
   object-fit: cover;
 }
-
+.logo_comsoc{
+  background-image: url(../images/comsoc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+}
 @media screen and (max-width: 500px) {
   .faq-wrapper {
     padding: 5px;
