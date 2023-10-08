@@ -14,7 +14,13 @@
     flex-wrap: wrap;
     align-items: center;
 }
-
+.logo{
+    background: url(../images/logo.png) no-repeat;
+    height: 160px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
 .countdown-container {
     text-align: center;
     font-family: array,'Black Ops One', cursive;
