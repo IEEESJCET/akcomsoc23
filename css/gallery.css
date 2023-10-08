@@ -284,6 +284,10 @@ body {
 @media only screen and (max-width: 1024px) {
   .gallery-wrapper .content {
     padding: 5vh 0;
+    width: 100%;
+    height: 45vh;
+    background: #101014;
+    background: linear-gradient(to left, #19191f, #101014);
   }
   .gallery-wrapper .content .gallery.full .swiper-container .swiper-wrapper {
     height: 70%;
