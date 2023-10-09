@@ -410,6 +410,11 @@ strong {
   color: #000000;
   font-weight: 600;
 }
+.navbar-nav .nav-link.active:hover
+{
+  color: #ffffff;
+  font-weight: 600;
+}
 .navbar-nav .nav-link:hover {
   color: #F8CB2E;
   font-weight: 600;
