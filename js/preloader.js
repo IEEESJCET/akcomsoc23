@@ -80,7 +80,7 @@ function preloader() {
     document.getElementById("preloader").classList.toggle("hidden");
     document.getElementById("desktop").classList.toggle("hidden");
     window.onscroll = function () {};
-  }, 6000);
+  }, 2000);
 
   TopScroll = window.pageYOffset || document.documentElement.scrollTop;
   (LeftScroll = window.pageXOffset || document.documentElement.scrollLeft),
