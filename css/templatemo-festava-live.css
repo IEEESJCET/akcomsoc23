@@ -15,7 +15,7 @@ https://templatemo.com/tm-583-festava-live
   --primary-color: #F8CB2E;
   --secondary-color: #EE5007;
   --section-bg-color: #f0f8ff;
-  --custom-btn-bg-color: #EE5007;
+  --custom-btn-bg-color: #FFA500;
   --custom-btn-bg-hover-color: #c01f27;
   --dark-color: #000000;
   --p-color: #717275;
@@ -405,9 +405,13 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link.active
+{
   color: #000000;
+  font-weight: 600;
+}
+.navbar-nav .nav-link:hover {
+  color: #F8CB2E;
   font-weight: 600;
 }
 
