@@ -326,7 +326,13 @@ strong {
   border-color: var(--white-color);
   color: var(--white-color);
 }
-
+.about_us{
+  /* background-image: url('../images/edward-unsplash-blur.jpg'); */
+  background-color: #120e0a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 /*---------------------------------------
   VIDEO              
@@ -342,6 +348,7 @@ strong {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  filter: blur(3px);
 }
 
 
@@ -519,6 +526,9 @@ strong {
   height: 100%;
 }
 
+.aboutHost {
+  backdrop-filter: blur(11px);
+}
 
 /*---------------------------------------
   ABOUT              
@@ -529,6 +539,15 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.about-section2 {
+  background-image: url('../images/bg.jpg');
+  background-color: #704010;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  backdrop-filter: blur(50px) saturate(180%);
 }
 
 .about-image {
@@ -880,7 +899,8 @@ strong {
 .copyright-text {
   color: var(--white-color);
 }
-.site-footer .links{
+
+.site-footer .links {
   width: fit-content;
 }
 
