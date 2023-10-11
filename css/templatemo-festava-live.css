@@ -238,13 +238,13 @@ strong {
 }
 
 .tab-content {
-  background-color: var(--white-color);
+  background-color: #363738;
   border-radius: var(--border-radius-medium);
   padding: 30px 10px;
 }
 
 .nav-tabs {
-  background-color: var(--section-bg-color);
+  background-color: var(--p-color);
   border-radius: var(--border-radius-large);
   border-bottom: 0;
   padding: 15px;
@@ -266,7 +266,7 @@ strong {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
-  background: var(--white-color);
+  background: #363738;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   color: var(--primary-color);
 }
@@ -841,9 +841,9 @@ strong {
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
-.google-map {
+/* .google-map {
   border-radius: var(--border-radius-medium);
-}
+} */
 
 
 /*---------------------------------------
