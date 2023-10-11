@@ -7,14 +7,50 @@
         transform: translateY(-2000px);
     }
 }
-
-.animated-background{
+:root {
+    --bgColor: #1d2d3d;
+    --bgColor2: #090a0f;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    z-index: 1;
+    position: relative;
+}
+#preloader .animated-background{
     z-index: 0;
     position: absolute;
     top: 0;
     left: 0;
     height: 100dvh;
     width: 100dvw;
+    background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
+
+}
+
+#desktop .animated-background{
+    z-index: 0;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bgColor) !important;
+}
+.about-section .animated-background,
+.hero-section .animated-background{
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bgColor) !important;
+}
+section{
+    background-color: var(--bgColor);
 }
 #stars1 {
     width: 1px;

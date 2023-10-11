@@ -51,7 +51,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 3vh 0;
-  background: #ffffff74;
+  /* background: #ffffff74; */
   /* background: linear-gradient(to left, #19191f, #101014); */
 }
 .gallery-wrapper .content .gallery.full {
