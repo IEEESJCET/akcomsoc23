@@ -37,7 +37,8 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--bgColor) !important;
+    /* background-color: var(--bgColor) !important; */
+    background-color: black;
 }
 .about-section .animated-background,
 .hero-section .animated-background{
@@ -47,10 +48,12 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--bgColor) !important;
+    /* background-color: var(--bgColor) !important; */
+    background-color: black;
 }
 section{
-    background-color: var(--bgColor);
+    /* background-color: var(--bgColor) !important; */
+    background-color: black;
 }
 #stars1 {
     width: 1px;

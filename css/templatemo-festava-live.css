@@ -378,8 +378,8 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: #000000bd;
-  backdrop-filter: blur(15px);
+  background-color: transparent;
+  backdrop-filter: blur(5px);
 }
 
 .navbar {
