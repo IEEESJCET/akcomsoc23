@@ -12,6 +12,7 @@
 
   <!-- CSS FILES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"href="./css/comming.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -47,12 +48,11 @@
 <body onload="preloader()">
   <div id="preloader">
     <div class="preloader-logo" id="preloader-logo">
-
-
-
     </div>
   </div>
+
   <div id="desktop" class="hidden">
+    
     <main>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -61,7 +61,11 @@
           </a>
 
           <!-- <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a> -->
-
+          <section class="animated-background">
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+          </section>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -177,13 +181,6 @@
             </div>
           </div>
         </div>
-
-        <div class="video-wrap">
-          <video autoplay="" loop="" muted="" class="custom-video" poster="">
-            <source src="video/vid2.mp4" type="video/mp4">
-
-            Your browser does not support the video tag.
-          </video>
         </div>
       </section>
 
@@ -194,9 +191,9 @@
 
             <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
               <div class="services-info">
-                <h2 class="text-white mb-4">About AKComSocSC '23</h2>
+                <h2 class="about-text mb-4">About AKComSocSC '23</h2>
 
-                <p class="text-white">All Kerala Communications Society Students Conclave 2023(AKComSoc '23) is a
+                <p class="about-text">All Kerala Communications Society Students Conclave 2023(AKComSoc '23) is a
                   two-day
                   event organized on the 4th and 5th of November 2023. The event is conducted by IEEE ComSoc Kerala
                   Chapter and is hosted by IEEE SJCET SB. Here we have 2 days of fun, tech, friendship, networking,
@@ -205,9 +202,9 @@
                   happening in the world of technology and participate in discussions on different technical domains.
                 </p>
 
-                <h6 class="text-white mt-4">Once in Lifetime Experience</h6>
+                <h6 class="about-text mt-4">Once in Lifetime Experience</h6>
 
-                <p class="text-white">Join us at AKComSoc '23 for a once-in-a-lifetime experience where you can immerse
+                <p class="about-text">Join us at AKComSoc '23 for a once-in-a-lifetime experience where you can immerse
                   yourself in two days of tech, fun, networking, and insightful discussions on the ever-evolving world
                   of
                   technology.</p>
@@ -222,6 +219,9 @@
                 <img src="images/about-img.jpeg" class="about-image img-fluid">
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
             <!-- </div>
         </div>
@@ -231,51 +231,62 @@
       <section class=" about_us section-padding"  id="section_2">
         <div class="container">
           <div class="row"> -->
+<div class="event-container">
+  <div class="container">
+    <div class="row">
+  <div class="services-info">
+    <h2 class="about-text mb-4">About Host</h2>
 
-            <div class="col-lg-6 col-12 mb-4 mt-5 mb-lg-0 d-flex align-items-center">
-              <div class="services-info">
-                <h2 class="text-white mb-4">About Host</h2>
+    <p class="about-text">All Kerala Communications Society Students Conclave 2023(AKComSoc '23) is a
+      two-day
+      event organized on the 4th and 5th of November 2023. The event is conducted by IEEE ComSoc Kerala
+      Chapter and is hosted by IEEE SJCET SB. Here we have 2 days of fun, tech, friendship, networking,
+      and much more. Let’s come together and celebrate technology. Come over and discuss the trending
+      changes
+      happening in the world of technology and participate in discussions on different technical domains.
+    </p>
 
-                <p class="text-white">All Kerala Communications Society Students Conclave 2023(AKComSoc '23) is a
-                  two-day
-                  event organized on the 4th and 5th of November 2023. The event is conducted by IEEE ComSoc Kerala
-                  Chapter and is hosted by IEEE SJCET SB. Here we have 2 days of fun, tech, friendship, networking,
-                  and much more. Let’s come together and celebrate technology. Come over and discuss the trending
-                  changes
-                  happening in the world of technology and participate in discussions on different technical domains.
-                </p>
+    <h6 class="about-text mt-4">Once in Lifetime Experience</h6>
 
-                <h6 class="text-white mt-4">Once in Lifetime Experience</h6>
+    <p class="about-text">Join us at AKComSoc '23 for a once-in-a-lifetime experience where you can immerse
+      yourself in two days of tech, fun, networking, and insightful discussions on the ever-evolving world
+      of
+      technology.</p>
 
-                <p class="text-white">Join us at AKComSoc '23 for a once-in-a-lifetime experience where you can immerse
-                  yourself in two days of tech, fun, networking, and insightful discussions on the ever-evolving world
-                  of
-                  technology.</p>
+      
+  </div>
 
-                <a class="btn custom-btn smoothscroll" href="#">Interested?</a>
+    </div>
+  </div>
+</div>
 
-              </div>
-            </div>
+            
 
-            <div class="col-lg-6 col-12 mt-5">
-              <div class="about-text-wrap">
-                <img src="images/about-img.jpeg" class="about-image img-fluid">
-              </div>
-            </div>
 
+
+      <section class="artists-section section-padding " id="section_3">
+        <nav class="d-flex justify-content-center">
+          <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-ContactForm" type="button" role="tab" aria-controls="nav-ContactForm"
+              aria-selected="false">
+              <h5>Events</h5>
+            </button>
+        
+            
           </div>
-        </div>
-      </section>
-
-      <section class="artists-section section-padding" id="section_3">
+        </nav>
         <div class="container">
           <div class="row justify-content-center">
   
-            <div class="col-12 text-center">
-              <h2 class="mb-4">Events</h1>
+            <!-- <div class="col-12 text-center">
+              <p class="mb-4 comming_soon">Events Coming Soon...</p>
+            </div> -->
+            <div class="coming-soon" >
+              <h2 class="TEXT mb-5" >COMING SOON</h2>
             </div>
-  
-            <div class="col-lg-5 col-12">
+            
+            <div class="col-lg-5 col-12 comming">
               <div class="artists-thumb">
                 <div class="artists-image-wrap">
                   <img src="images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg" class="artists-image img-fluid">
@@ -307,7 +318,7 @@
               </div>
             </div>
   
-            <div class="col-lg-5 col-12">
+            <div class="col-lg-5 col-12 comming">
               <div class="artists-thumb">
                 <div class="artists-image-wrap">
                   <img src="images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg" class="artists-image img-fluid">
@@ -471,7 +482,17 @@
 
       <section class="gallery-section section-padding " id="section_4">
 
+<nav class="d-flex justify-content-center">
+  <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+      data-bs-target="#nav-ContactForm" type="button" role="tab" aria-controls="nav-ContactForm"
+      aria-selected="false">
+      <h5>Glimpses of AKComSocSC'22</h5>
+    </button>
 
+    
+  </div>
+</nav>
         <div class="loader">
           <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;"
@@ -720,13 +741,24 @@
 
 
       <section id="section_5" class="pricing pt-0">
+        <nav class="d-flex justify-content-center">
+          <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-ContactForm" type="button" role="tab" aria-controls="nav-ContactForm"
+              aria-selected="false">
+              <h5>Tickets</h5>
+            </button>
+        
+            
+          </div>
+        </nav>
         <div class="container">
   
-          <div class="section-header" data-aos="fade-up">
+          <!-- <div class="section-header" data-aos="fade-up">
             <span>Tickets</span>
             <h2>Tickets</h2>
   
-          </div>
+          </div> -->
   
           <div class="row justify-content-center align-items-center gy-4">
   
