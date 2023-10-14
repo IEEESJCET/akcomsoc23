@@ -35,6 +35,25 @@
     /* backdrop-filter: blur(10px); Adjust the blur amount as needed */
   }
 
+  .coming-soon-wk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    text-align: center;
+    background: transparent; /* Adjust the background color and opacity as needed */
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+    color: #000; /* Text color for "Revealing Soon" */
+  }
+
   .coming-soon h2{
     position: relative;
     color: #FFA500;
@@ -55,4 +74,54 @@
 .coming-soon h1 {
    color: #ee5007;
   }  
+
+  /* blurring div */
+
+  .ab {
+  position: relative;
+  overflow: hidden;
+}
+
+.abc {
+  position: relative;
+  z-index: 1;
+}
+
+.abcd{
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  z-index: 2;
+}
+
+.abcde {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  text-align: center;
+  background: transparent; /* Adjust the background color and opacity as needed */
+}
+
+.coming-soon-text {
+  position: relative;
+  color: #FFA500;
+  font-size: 4em;
+  -webkit-box-reflect: below -0px linear-gradient(transparent,#0008);
   
+  
+  font-weight: 600;
+  text-shadow: 0 0 10px #ff8c3b, /* Text color for "Coming Tomorrow" */
+}
+
+/* Exclude blur effect for div with class "no-blur" */
+.artists-thumb.no-blur .blurred-overlay {
+  backdrop-filter: none; /* No blur effect for this specific div */
+}
