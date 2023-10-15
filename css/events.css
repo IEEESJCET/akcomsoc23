@@ -112,8 +112,9 @@
 
 .coming-soon-text {
   position: relative;
+  text-transform: capitalize;
   color: #FFA500;
-  font-size: 4em;
+  font-size: 2.3em;
   -webkit-box-reflect: below -0px linear-gradient(transparent,#0008);
   
   
