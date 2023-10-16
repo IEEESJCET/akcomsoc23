@@ -1104,6 +1104,10 @@ strong {
   box-shadow: 12px 20px 11px 5px rgba(0, 0, 0, 0.40);
 }
 
+.pricing-item:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
 .pricing h3 {
   font-weight: 600;
   margin-bottom: 15px;
