@@ -238,7 +238,7 @@ strong {
 }
 
 .tab-content {
-  background-color: #363738;
+  /* background-color: #363738; */
   border-radius: var(--border-radius-medium);
   padding: 30px 10px;
 }
@@ -328,7 +328,8 @@ strong {
   border-color: var(--white-color);
   color: var(--white-color);
 }
-.about_us{
+
+.about_us {
   /* background-image: url('../images/edward-unsplash-blur.jpg'); */
   background-color: #120e0a;
   background-repeat: no-repeat;
@@ -416,16 +417,16 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active
-{
+.navbar-nav .nav-link.active {
   color: #000000;
   font-weight: 600;
 }
-.navbar-nav .nav-link.active:hover
-{
+
+.navbar-nav .nav-link.active:hover {
   color: #ffffff;
   font-weight: 600;
 }
+
 .navbar-nav .nav-link:hover {
   color: #F8CB2E;
   font-weight: 600;
@@ -540,8 +541,8 @@ strong {
 -----------------------------------------*/
 
 .about-section {
- 
-  background-color:white;
+
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -554,7 +555,8 @@ strong {
   position: relative;
   backdrop-filter: blur(50px) saturate(180%);
 }
-.about-text{
+
+.about-text {
   color: rgb(255, 255, 255);
 }
 
@@ -1094,7 +1096,8 @@ strong {
 .pricing-item {
   padding: 60px 40px;
   box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
-  background: transparent;
+  /* background: transparent; */
+  background: #040404;
   height: 100%;
   border-style: solid;
   border-width: 2px;
@@ -1105,7 +1108,7 @@ strong {
   transition-duration: 0.5s;
 }
 
-.pricing-item:hover{
+.pricing-item:hover {
   transform: scaleY(1.05) scaleX(1.03);
   transition-duration: 0.5s;
 }
@@ -1184,6 +1187,7 @@ strong {
   background: var(--gradient);
   color: var(--white);
 }
+
 /* 
 .pricing .featured {
   border-top-color: var(--color-primary);
@@ -1198,6 +1202,7 @@ strong {
   display: flex;
   padding: 60px 40px;
 }
+
 .poweredby img {
   margin: auto;
 }

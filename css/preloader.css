@@ -108,7 +108,7 @@
   width: 100%;
   /* border: 1px solid grey; */
   /* border-radius: 30px; */
-  background-color: #363738;
+  /* background-color: #363738; */
 }
 
 .faq-wrapper>p {
@@ -131,7 +131,9 @@
   display: flex;
   justify-content: space-between;
   outline: none;
-  background-color: orange;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: transparent;
   cursor: pointer;
   padding: 10px;
   /* font-family: 'Roboto', sans-serif; */
@@ -143,7 +145,7 @@
 
 .active,
 .accordion :hover {
-  background-color: orange;
+  /* background-color: orange; */
   transition: 0.5s;
 }
 
@@ -170,11 +172,20 @@
 
 }
 
+.faq-border {
+  border: 1px solid #fff !important;
+  border-radius: 10px !important;
+}
+
 .faq {
   margin: 10px 0px;
   /* border: 1px solid rgba(0, 0, 0, 0.2); */
   border-radius: 20px;
   /* padding: 10px; */
+}
+
+.faq svg {
+  fill: #fff;
 }
 
 .faq .active {
@@ -236,71 +247,72 @@
     min-width: -webkit-fill-available;
   }
 }
-  /* ..............FAQ Ends...........*/
 
-  /* .....................gallery.......... */
-  .box {
-    position: relative;
-    width: 200px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation: animate 20s linear infinite;
+/* ..............FAQ Ends...........*/
+
+/* .....................gallery.......... */
+.box {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
   }
 
-  @keyframes animate {
-    0% {
-      transform: perspective(1000px) rotateY(0deg);
-    }
-
-    100% {
-      transform: perspective(1000px) rotateY(360deg);
-    }
-
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
   }
 
-  .gallery_sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-height: 100dvh;
-    background: url(../images/prev/img21.jpg);
-    background-size: cover;
+}
+
+.gallery_sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100dvh;
+  background: url(../images/prev/img21.jpg);
+  background-size: cover;
+}
+
+.box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)* 45deg)) translateZ(400px);
+  /* -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004); */
+}
+
+.box span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo_comsoc {
+  background-image: url(../images/comsoc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 25px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .faq-wrapper {
+    padding: 5px;
   }
 
-  .box span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: center;
-    transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i)* 45deg)) translateZ(400px);
-    /* -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004); */
-  }
-
-  .box span img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .logo_comsoc {
-    background-image: url(../images/comsoc.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 25px;
-    margin-top: 5px;
-  }
-
-  @media screen and (max-width: 500px) {
-    .faq-wrapper {
-      padding: 5px;
-    }
-
-  }
+}
