@@ -419,6 +419,7 @@ strong {
 
 .navbar-nav .nav-link.active {
   color: #000000;
+  background-color: #ffa500;
   font-weight: 600;
 }
 
