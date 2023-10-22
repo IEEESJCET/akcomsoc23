@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
-@font-face {
-    font-family: 'array';
-    src: url(./fonts/Array-Regular.otf) format('otf'),
-        url(./fonts/Array-Bold.otf) format('otf'),
-        url(./fonts/Array-Semibold.otf) format('otf');
-    font-weight: normal;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+html{
+    overflow-x: hidden;
 }
-
 .header-bottom-sec {
     justify-content: space-between;
     flex-wrap: wrap;
@@ -23,7 +18,7 @@
 }
 .countdown-container {
     text-align: center;
-    font-family: array,'Black Ops One', cursive;
+    font-family: 'Orbitron','Black Ops One', cursive;
 }
 
 .countdown {
