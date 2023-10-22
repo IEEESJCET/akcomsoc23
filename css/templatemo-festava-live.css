@@ -247,7 +247,7 @@ strong {
   /* background-color: var(--p-color); */
   border-radius: var(--border-radius-large);
   border-bottom: 0;
-  padding: 15px;
+  padding: 5px;
   margin-bottom: 25px;
   border: 1px solid #fff;
 }
