@@ -43,6 +43,9 @@ https://templatemo.com/tm-583-festava-live
   --font-weight-bold: 700;
 }
 
+html{
+  scroll-behavior: smooth
+}
 body {
   background-color: var(--white-color);
   font-family: var(--body-font-family);
