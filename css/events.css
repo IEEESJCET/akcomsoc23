@@ -59,7 +59,7 @@
     position: relative;
     color: #ffa500;
     font-size:60px;
-    /* -webkit-box-reflect: below 0px linear-gradient(transparent,#0008); */
+    -webkit-box-reflect: below 0px linear-gradient(transparent,#0008);
     -webkit-text-stroke: 3px #fff;
     font-weight: 600;
     text-shadow: 0 0 10px #ff8c3b,;
