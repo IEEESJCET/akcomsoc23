@@ -129,3 +129,8 @@
 .artists-thumb.no-blur .blurred-overlay {
   backdrop-filter: none; /* No blur effect for this specific div */
 }
+
+.datestyling{
+  color: #fff;
+  font-weight: 600;
+}
