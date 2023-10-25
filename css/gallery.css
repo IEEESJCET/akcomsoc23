@@ -55,6 +55,7 @@ body {
   padding: 3vh 0;
   background: #101014;
   background: linear-gradient(to left, #19191f, #101014);
+  background: transparent;
 }
 
 .gallery-wrapper .content .gallery.full {
