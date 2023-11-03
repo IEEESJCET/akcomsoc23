@@ -399,7 +399,8 @@
                 </div>
                 <div class="artists-hover">
                   <p>
-                    Don't miss this empowering opportunity to hear from Mrs Hema Gopalakrishnan, who is a trailblazing figure in the world of technology and a passionate advocate for women in the tech industry✨
+                    Don't miss this empowering opportunity to hear from Mrs Hema Gopalakrishnan, who is a trailblazing
+                    figure in the world of technology and a passionate advocate for women in the tech industry✨
                   </p>
                   <hr />
                   <p>
@@ -419,7 +420,8 @@
                 </div>
                 <div class="artists-hover">
                   <p>
-                    Introducing the next panelist for WICE Track, Mrs. Priya Nair, an expert in AI/ML and data analytics. Don't miss the chance to hear her insights✨
+                    Introducing the next panelist for WICE Track, Mrs. Priya Nair, an expert in AI/ML and data
+                    analytics. Don't miss the chance to hear her insights✨
                   </p>
                   <hr />
                   <p>
@@ -439,7 +441,9 @@
                 </div>
                 <div class="artists-hover">
                   <p>
-                    Join us in welcoming our next speaker, Dr. Jalaja M J, the retired principal of RIT Kottayam. Don’t miss this unique opportunity to gain valuable insights on entrepreneurship and female leadership in the college setting✨
+                    Join us in welcoming our next speaker, Dr. Jalaja M J, the retired principal of RIT Kottayam. Don’t
+                    miss this unique opportunity to gain valuable insights on entrepreneurship and female leadership in
+                    the college setting✨
                   </p>
                   <hr />
                   <p>
@@ -454,6 +458,81 @@
             </div>
           </div>
         </div>
+      </section>
+
+
+      <section class="artists-section section-padding" id="section_3">
+        <section class="animated-background">
+          <div id="stars1"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+        </section>
+        <nav class="d-flex justify-content-center">
+          <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-ContactForm" type="button" role="tab" aria-controls="nav-ContactForm"
+              aria-selected="false" style="width: auto; padding: 1">
+              <h5>Schedule</h5>
+            </button>
+          </div>
+        </nav>
+
+        <div class="schedule_container">
+          <div class="day_container">
+            <div class="day1">
+              <p class="day_title">Day 1 Schedule</p>
+              <div class="day_programm">
+                <div class="programm">
+                  <p class="time">09-10 AM</p>
+                  <div class="details">
+                    <p class="head">Registration</p>
+                    <p class="desc">Registration starts at 09:00 to 10:00 AM at front of Einstein Hall</p>
+                  </div>
+                </div>
+                <div class="programm">
+                  <p class="time">08-09 AM</p>
+                  <div class="details">
+                    <p class="head">Inaugural Ceremony</p>
+                    <p class="desc">Inaugural Ceremony starts at 10:00 to 11:00 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="day2">
+              <p class="day_title">Day 2 Schedule</p>
+              <div class="day_programm">
+                <div class="programm">
+                  <p class="time">08-09 AM</p>
+                  <div class="details">
+                    <p class="head">Registration</p>
+                    <p class="desc"></p>
+                  </div>
+                </div>
+                <div class="programm">
+                  <p class="time">08-09 AM</p>
+                  <div class="details">
+                    <p class="head">Inaguration</p>
+                    <p class="desc"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script type="module">
+          const dayElement = document.getElementsByClassName("day1")[0];
+          const dayElement2 = document.getElementsByClassName("day2")[0];
+
+          dayElement.addEventListener("click", () => {
+            dayElement.classList.toggle("active");
+            dayElement2.classList.remove("active");
+          });
+          dayElement2.addEventListener("click", () => {
+            dayElement2.classList.toggle("active");
+            dayElement.classList.remove("active");
+          });
+
+        </script>
       </section>
 
       <section class="artists-section section-padding" id="section_3">
@@ -961,7 +1040,7 @@
                   </li>
                 </ul>
                 <button class="btn btn-danger btn-lg btn-block" disabled>Sold Out</button>
-               
+
               </div>
             </div>
             <!-- End Pricing Item -->
@@ -985,7 +1064,7 @@
                   </li>
                 </ul>
                 <button class="btn btn-danger btn-lg btn-block" disabled>Sold Out</button>
-              
+
               </div>
             </div>
             <!-- End Pricing Item -->

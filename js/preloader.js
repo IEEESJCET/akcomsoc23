@@ -1,5 +1,7 @@
 function preloader() {
-  document.getElementById("preloader-logo").innerHTML=`<svg width="90%" height="576" viewBox="0 0 2558 576" fill="none" xmlns="http://www.w3.org/2000/svg"
+  document.getElementById(
+    "preloader-logo"
+  ).innerHTML = `<svg width="90%" height="576" viewBox="0 0 2558 576" fill="none" xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="logo_svg">
     <g id="circle">
@@ -80,7 +82,7 @@ function preloader() {
     document.getElementById("preloader").classList.toggle("hidden");
     document.getElementById("desktop").classList.toggle("hidden");
     window.onscroll = function () {};
-  }, 4000);
+  }, 100);
 
   TopScroll = window.pageYOffset || document.documentElement.scrollTop;
   (LeftScroll = window.pageXOffset || document.documentElement.scrollLeft),
@@ -89,3 +91,4 @@ function preloader() {
       window.scrollTo(0, 0);
     });
 }
+

@@ -1,24 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-html{
+
+html {
     overflow-x: hidden;
 }
+
 .header-bottom-sec {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
-.logo{
+
+.logo {
     background: url(../images/logo_svg.svg) no-repeat;
     height: 160px;
     width: 100%;
     background-size: contain;
     background-position: center;
 }
+
 .countdown-container {
     text-align: center;
-    font-family: 'Orbitron','Black Ops One', cursive;
+    font-family: 'Orbitron', 'Black Ops One', cursive;
 }
 
 .countdown {
@@ -55,4 +59,100 @@ html{
     .countdown-text {
         font-size: 16px;
     }
+}
+
+.schedule_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule_container .day_container {
+    width: 90%;
+}
+
+.schedule_container .day_container .day1,
+.schedule_container .day_container .day2 {
+    /* padding: 20px; */
+    background: orange;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+
+.schedule_container .day_container .day1.active,
+.schedule_container .day_container .day2.active {
+    max-height: unset;
+    transition: max-height 0.5s ease-in-out;
+}
+
+
+.schedule_container .day_container .day1 .day_title,
+.schedule_container .day_container .day2 .day_title {
+    padding: 20px;
+}
+
+.schedule_container .day_container .day1 .day_programm,
+.schedule_container .day_container .day2 .day_programm {
+    background: black;
+    padding: 30px;
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+}
+
+.schedule_container .day_container .day1 .day_programm p,
+.schedule_container .day_container .day2 .day_programm p {
+    color: #fff;
+}
+
+.schedule_container .day_container .day1 .day_programm .programm,
+.schedule_container .day_container .day2 .day_programm .programm {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.schedule_container .day_container .day1 .day_programm .programm .time,
+.schedule_container .day_container .day2 .day_programm .programm .time {
+    background: orange;
+    /* padding: 20px; */
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+}
+.schedule_container .day_container .day1 .day_programm .programm .time::after,
+.schedule_container .day_container .day2 .day_programm .programm .time::after {
+    content: '';
+    width: 2px;
+    height: 130px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+}
+.schedule_container .day_container .day1 .day_programm .programm .time:last-child::after,
+.schedule_container .day_container .day2 .day_programm .programm .time:last-child::after {
+    display: none;
+    width: 0px;
+    height: 0px;
+}
+.schedule_container .day_container .day1 .day_programm .programm .details,
+.schedule_container .day_container .day2 .day_programm .programm .details {
+    width: calc(100% - 100px);
+}
+.schedule_container .day_container .day1 .day_programm .programm .details .head,
+.schedule_container .day_container .day2 .day_programm .programm .details .head {
+    font-weight: 600;
+    margin-bottom: 0px;
+
 }
