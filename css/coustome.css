@@ -78,6 +78,8 @@ html {
     background: orange;
     max-height: 80px;
     overflow: hidden;
+    border-radius: 20px;
+    margin: 10px 0px;
 }
 
 
@@ -100,6 +102,7 @@ html {
     display: flex;
     gap: 70px;
     flex-direction: column;
+    border-radius: 30px 30px 0px 0px;
 }
 
 .schedule_container .day_container .day1 .day_programm p,
@@ -140,11 +143,9 @@ html {
     top: 70px;
     transform: translateX(-50%);
 }
-.schedule_container .day_container .day1 .day_programm .programm .time:last-child::after,
-.schedule_container .day_container .day2 .day_programm .programm .time:last-child::after {
+.schedule_container .day_container .day1 .day_programm :last-child .time::after,
+.schedule_container .day_container .day2 .day_programm :last-child .time::after{
     display: none;
-    width: 0px;
-    height: 0px;
 }
 .schedule_container .day_container .day1 .day_programm .programm .details,
 .schedule_container .day_container .day2 .day_programm .programm .details {
