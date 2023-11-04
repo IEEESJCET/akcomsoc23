@@ -80,13 +80,19 @@ html {
     overflow: hidden;
     border-radius: 20px;
     margin: 10px 0px;
+    transition: max-height 0.5s ease-in-out;
 }
 
 
 .schedule_container .day_container .day1.active,
 .schedule_container .day_container .day2.active {
-    max-height: unset;
-    transition: max-height 0.5s ease-in-out;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.schedule_container .day_container .day1.active::-webkit-scrollbar,
+.schedule_container .day_container .day2.active::-webkit-scrollbar {
+   display: none;
 }
 
 
@@ -95,31 +101,31 @@ html {
     padding: 20px;
 }
 
-.schedule_container .day_container .day1 .day_programm,
-.schedule_container .day_container .day2 .day_programm {
+.schedule_container .day_container .day1 .day_programm1,
+.schedule_container .day_container .day2 .day_programm2 {
     background: black;
-    padding: 30px;
+    padding: 30px 20px;
     display: flex;
     gap: 70px;
     flex-direction: column;
     border-radius: 30px 30px 0px 0px;
 }
 
-.schedule_container .day_container .day1 .day_programm p,
-.schedule_container .day_container .day2 .day_programm p {
+.schedule_container .day_container .day1 .day_programm1 p,
+.schedule_container .day_container .day2 .day_programm2 p {
     color: #fff;
 }
 
-.schedule_container .day_container .day1 .day_programm .programm,
-.schedule_container .day_container .day2 .day_programm .programm {
+.schedule_container .day_container .day1 .day_programm1 .programm,
+.schedule_container .day_container .day2 .day_programm2 .programm {
     display: flex;
     align-items: center;
     gap: 30px;
 
 }
 
-.schedule_container .day_container .day1 .day_programm .programm .time,
-.schedule_container .day_container .day2 .day_programm .programm .time {
+.schedule_container .day_container .day1 .day_programm1 .programm .time,
+.schedule_container .day_container .day2 .day_programm2 .programm .time {
     background: orange;
     /* padding: 20px; */
     border-radius: 50%;
@@ -129,11 +135,11 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     position: relative;
 }
-.schedule_container .day_container .day1 .day_programm .programm .time::after,
-.schedule_container .day_container .day2 .day_programm .programm .time::after {
+.schedule_container .day_container .day1 .day_programm1 .programm .time::after,
+.schedule_container .day_container .day2 .day_programm2 .programm .time::after {
     content: '';
     width: 2px;
     height: 130px;
@@ -143,17 +149,20 @@ html {
     top: 70px;
     transform: translateX(-50%);
 }
-.schedule_container .day_container .day1 .day_programm :last-child .time::after,
-.schedule_container .day_container .day2 .day_programm :last-child .time::after{
+.schedule_container .day_container .day1 .day_programm1 :last-child .time::after,
+.schedule_container .day_container .day2 .day_programm2 :last-child .time::after{
     display: none;
 }
-.schedule_container .day_container .day1 .day_programm .programm .details,
-.schedule_container .day_container .day2 .day_programm .programm .details {
+.schedule_container .day_container .day1 .day_programm1 .programm .details,
+.schedule_container .day_container .day2 .day_programm2 .programm .details {
     width: calc(100% - 100px);
 }
-.schedule_container .day_container .day1 .day_programm .programm .details .head,
-.schedule_container .day_container .day2 .day_programm .programm .details .head {
+.schedule_container .day_container .day1 .day_programm1 .programm .details .head,
+.schedule_container .day_container .day2 .day_programm2 .programm .details .head {
     font-weight: 600;
     margin-bottom: 0px;
-
+}
+.schedule_container .day_container .day1 .day_programm1 .programm .details .desc,
+.schedule_container .day_container .day2 .day_programm2 .programm .details .desc {
+    font-size: 12px;
 }

@@ -47,6 +47,7 @@
   <link rel="stylesheet" href="css/coustome.css" />
 
   <script src="js/preloader.js"></script>
+  <script type="module" src="js/schedule.js"></script>
 </head>
 
 <body onload="preloader()">
@@ -462,11 +463,11 @@
 
 
       <section class="artists-section section-padding" id="section_3">
-        <section class="animated-background">
+        <!-- <section class="animated-background">
           <div id="stars1"></div>
           <div id="stars2"></div>
           <div id="stars3"></div>
-        </section>
+        </section> -->
         <nav class="d-flex justify-content-center">
           <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab" role="tablist">
             <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
@@ -481,58 +482,18 @@
           <div class="day_container">
             <div class="day1">
               <p class="day_title">Day 1 Schedule</p>
-              <div class="day_programm">
-                <div class="programm">
-                  <p class="time">09-10 AM</p>
-                  <div class="details">
-                    <p class="head">Registration</p>
-                    <p class="desc">Registration starts at 09:00 to 10:00 AM at front of Einstein Hall</p>
-                  </div>
-                </div>
-                <div class="programm">
-                  <p class="time">08-09 AM</p>
-                  <div class="details">
-                    <p class="head">Inaugural Ceremony</p>
-                    <p class="desc">Inaugural Ceremony starts at 10:00 to 11:00 AM</p>
-                  </div>
-                </div>
+              <div class="day_programm1">
+
               </div>
             </div>
             <div class="day2">
               <p class="day_title">Day 2 Schedule</p>
-              <div class="day_programm">
-                <div class="programm">
-                  <p class="time">08-09 AM</p>
-                  <div class="details">
-                    <p class="head">Registration</p>
-                    <p class="desc"></p>
-                  </div>
-                </div>
-                <div class="programm">
-                  <p class="time">08-09 AM</p>
-                  <div class="details">
-                    <p class="head">Inaguration</p>
-                    <p class="desc"></p>
-                  </div>
-                </div>
+              <div class="day_programm2">
+
               </div>
             </div>
           </div>
         </div>
-        <script type="module">
-          const dayElement = document.getElementsByClassName("day1")[0];
-          const dayElement2 = document.getElementsByClassName("day2")[0];
-
-          dayElement.addEventListener("click", () => {
-            dayElement.classList.toggle("active");
-            dayElement2.classList.remove("active");
-          });
-          dayElement2.addEventListener("click", () => {
-            dayElement2.classList.toggle("active");
-            dayElement.classList.remove("active");
-          });
-
-        </script>
       </section>
 
       <section class="artists-section section-padding" id="section_3">
