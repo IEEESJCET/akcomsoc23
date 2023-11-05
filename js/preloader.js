@@ -82,7 +82,7 @@ function preloader() {
     document.getElementById("preloader").classList.toggle("hidden");
     document.getElementById("desktop").classList.toggle("hidden");
     window.onscroll = function () {};
-  }, 100);
+  }, 4000);
 
   TopScroll = window.pageYOffset || document.documentElement.scrollTop;
   (LeftScroll = window.pageXOffset || document.documentElement.scrollLeft),
